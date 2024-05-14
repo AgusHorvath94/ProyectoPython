@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link Favicon -->
+
+    <link
+      rel="shortcut icon"
+      href="/Proyecto Integrador Python/img/favicon3.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Link CSS -->
+
+    <link rel="stylesheet" href="/Proyecto Integrador Python/css/style.css" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootrap icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <title>Pop Shop</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-section">
+        <img
+          class="logo-funko"
+          src="/Proyecto Integrador Python/img/logo.png"
+          alt="logo"
+        />
+        <p>Shop</p>
+      </div>
+
+      <!-- Barra navegacion -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#who"
+                  ><i class="bi bi-chat-right-dots"></i> Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services"
+                  ><i class="bi bi-hand-index-thumb"></i> Servicios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#catalog"
+                  ><i class="bi bi-book"></i> Catalogo
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""
+                  ><i class="bi bi-send"></i> Contactanos</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Titulo principal -->
+
+      <div class="contenedor-banner">
+        <h1 class="title">¡Bienvenidos al mundo de los Funkos!</h1>
+        <div class="offer">
+          <p><span>25%</span> de descuento en la primera compra</p>
+        </div>
+      </div>
+
+      <!-- Seccion presentacion -->
+
+      <section id="who">
+        <div class="container-who">
+          <h2>
+            ¿Quiénes somos?
+            <img
+              class="logo-funko2"
+              src="/Proyecto Integrador Python/img/super.png"
+              alt="logo"
+            />
+          </h2>
+          <p>
+            Con una sólida trayectoria de 8 años en el mercado, somos un
+            establecimiento dedicado a la venta de artículos de colección de una
+            amplia variedad de personajes. Nuestra especialidad son los "Funko
+            Pop", figuras que capturan el encanto del concepto japonés chibi de
+            estilo animado, ideales para los coleccionistas apasionados. Además
+            de esta popular línea, también ofrecemos una cuidadosa selección de
+            revistas coleccionables de anime, abarcando géneros y temáticas
+            diversas para satisfacer todos los gustos. En nuestro local,
+            encontrarás desde los personajes más icónicos hasta las joyas
+            ocultas del mundo del entretenimiento, todo cuidadosamente
+            seleccionado para brindarte una experiencia de compra única. Nos
+            enorgullece ser un destino para los entusiastas de la colección,
+            donde cada visita es una oportunidad para descubrir algo especial.
+            ¡Te invitamos a explorar nuestro catálogo y sumergirte en el
+            emocionante mundo de los coleccionables!
+          </p>
+        </div>
+        <img
+          class="local-img"
+          src="/Proyecto Integrador Python/img/local.jpeg"
+          alt="local"
+        />
+      </section>
+
+      <!-- Seccion de servicios -->
+
+      <section id="services">
+        <h2>
+          <img
+            class="logo-funko2"
+            src="/Proyecto Integrador Python/img/spider.png"
+            alt="logo"
+          />
+          Nuestros servicios
+        </h2>
+
+        <div class="servicios">
+          <div class="serv-item">
+            <i class="bi bi-unlock"></i>
+
+            <h4>Compra segura</h4>
+            <p>Tu compra sobre cualquier articulo es totalmente segura.</p>
+          </div>
+
+          <div class="serv-item">
+            <i class="bi bi-trophy"></i>
+
+            <h4>Fiabilidad</h4>
+            <p>Todos nuestros productos son importados con su sello original</p>
+          </div>
+
+          <div class="serv-item">
+            <i class="bi bi-tools"></i>
+            <h4>Garantia de devolucion</h4>
+            <p>
+              En el caso de que algun producto este roto/fallado, se garantiza
+              la devolucion/ reemplazo del mismo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion catalogo -->
+
+      <section class="catalog-section" id="catalog">
+        <h2>Catalogo</h2>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <!-- Catálogo de Funkos -->
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                  <a href="funkos.html">
+                    <div class="card">
+                      <h5 class="card-title">Funkos</h5>
+                      <img
+                        src="/Proyecto Integrador Python/img/funkos.png"
+                        class="card-img-top"
+                        alt="Funko"
+                      />
+                      <div class="card-body"></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Catálogo  Anime -->
+
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                  <a href="revistas.html">
+                    <div class="card">
+                      <h5 class="card-title">Revistas de Anime</h5>
+                      <img
+                        src="/Proyecto Integrador Python/img/anime.png"
+                        class="card-img-top"
+                        alt="Anime"
+                      />
+                      <div class="card-body"></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Datos de contacto - Footer -->
+
+    <footer>
+      <section id="firstSectionFooter">
+        <div class="logo-section">
+          <img
+            class="logo-funko"
+            src="/Proyecto Integrador Python/img/logo.png"
+            alt="logo"
+          />
+          <p>Shop</p>
+        </div>
+        <div class="ubi-section">
+          <p><i class="bi bi-geo"></i> Localidad</p>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105082.52414775609!2d-58.513360161293896!3d-34.60848836981988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbbb7c68078b%3A0xdc264e1614a96ae2!2sOficinas%20Codo%20a%20Codo(subsuelo)!5e0!3m2!1ses-419!2sar!4v1713243238747!5m2!1ses-419!2sar"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <article id="contact-section">
+          <p>Irigoyen 272, C1072 CABA</p>
+          <p><i class="bi bi-telephone"></i>1123232731</p>
+          <p><i class="bi bi-envelope"></i> ventas@funkoshop.com.ar</p>
+        </article>
+
+        <article id="redesSociales">
+          <h3>Redes Sociales</h3>
+          <br />
+          <div id="iconos">
+            <a href="https://twitter.com" target="_blank">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </article>
+      </section>
+      <section id="secondSectionFooter">
+        <h6>Todos los derechos reservados @ 2024</h6>
+      </section>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
