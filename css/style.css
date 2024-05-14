@@ -378,11 +378,12 @@ iframe {
     height: 500px;
   }
   .title {
-    font-size: 45px;
+    font-size: 35px;
+    width: 300px;
     margin-top: 6rem;
   }
   .offer {
-    width: 300px;
+    width: 250px;
     text-align: center;
   }
   .local-img {
