@@ -52,7 +52,7 @@ header {
   width: 80px;
 }
 
-p {
+.logo-section p {
   position: relative;
   right: 12px;
 }
@@ -83,6 +83,7 @@ p {
 
 h1 {
   font-family: Bungee Spice;
+  text-align: center;
 }
 
 .contenedor-banner span {
@@ -159,6 +160,10 @@ section h2 {
 .container-who {
   display: flex;
   flex-direction: column;
+}
+
+#services {
+  margin-bottom: 5rem;
 }
 
 .serv-item {
@@ -287,17 +292,18 @@ iframe {
   color: var(--color-2);
 }
 
-#contact-section {
+ #contact-section {
   width: 300px;
   color: var(--color-2);
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0px 0px 0px 0px;
 }
 
 #contact-section h6 {
   font-size: 20px;
-  margin-right: 2rem;
+
 }
 
 /* Media queries para tablet  */
@@ -317,7 +323,6 @@ iframe {
   .title {
     font-size: 40px;
     margin-top: 8rem;
-    text-align: center;
   }
 
   .offer {
@@ -352,8 +357,12 @@ iframe {
     font-size: 20px;
   }
 
+  .catalog-section {
+    margin-bottom: -6rem;
+  }
+
   .card {
-    padding: 5rem;
+    padding: 4rem;
   }
 
   /* Para el footer */
@@ -364,9 +373,6 @@ iframe {
     height: 100%;
   }
 
-  #contact-section {
-    margin-left: 30px;
-  }
 
   #redesSociales {
     margin-left: 2rem;
@@ -377,13 +383,7 @@ iframe {
 
 @media screen and (max-width: 375px) {
   /* Para el header */
-  header {
-    flex-direction: column;
-  }
 
-  nav {
-    text-align: center;
-  }
 
   .logo-funko {
     width: 150px;
@@ -409,16 +409,13 @@ iframe {
   .local-img {
     max-width: 500px;
   }
-  .container-who {
-    padding: 1rem;
-  }
-
   #who {
-    flex-direction: column;
-    gap: 20px;
+    font-size:18px ;
   }
 
   .serv-item {
     font-size: 16px;
   }
+
+
 }
