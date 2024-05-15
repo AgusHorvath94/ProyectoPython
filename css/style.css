@@ -162,7 +162,6 @@ section h2 {
 }
 
 
-
 .serv-item {
   display: flex;
   flex-direction: column;
@@ -170,37 +169,28 @@ section h2 {
   justify-content: center;
   text-align: center;
   width: 300px;
-
 }
-
-
 
 .serv-item i {
-font-size: 4rem;
+  font-size: 5rem;
 }
-
-.serv-item p {
-  font-size: 18px;
-  margin-left: 1rem;
-}
-
 
 .servicios {
   color: whitesmoke;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
- padding: 3rem;
- gap: 3rem;
-   
+  padding: 4rem;
+  gap: 2rem;
 }
 
 #services h2 {
-  background-color: var(--color-secondary);
   color: whitesmoke;
   text-align: center;
-
+  padding: 1rem;
+  font-size: 2rem;
 }
+
 
 .catalog-section h2 {
   text-align: center;
