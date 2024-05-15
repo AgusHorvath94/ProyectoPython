@@ -326,8 +326,11 @@ iframe {
 
   #who {
     flex-direction: column;
-    font-size: 1rem;
     gap: 20px;
+  }
+
+  #who p {
+    font-size: 1rem;
   }
   .local-img {
     width: 100%;
@@ -413,14 +416,8 @@ iframe {
   #who {
     flex-direction: column;
     gap: 20px;
-
-   
   }
 
-  #who p {
-    font-size: 1rem;
-    
-  }
   .serv-item {
     font-size: 16px;
   }
