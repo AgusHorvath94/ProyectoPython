@@ -332,11 +332,15 @@ iframe {
   #who {
     flex-direction: column;
     gap: 20px;
+  
   }
 
   #who p {
-    font-size: 1rem;
+    font-size: 16px;
+
   }
+
+
   .local-img {
     width: 100%;
     max-width: 500px;
@@ -344,17 +348,16 @@ iframe {
   .container-who {
     text-align: center;
   }
-  .serv-item {
-    width: 175px;
-  }
+
 
   .servicios {
     flex-direction: column;
     align-items: center;
+    margin-top: -3rem;
   }
   .serv-item {
     width: 300px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .catalog-section {
@@ -381,7 +384,7 @@ iframe {
 
 /* Media queries para móviles */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   /* Para el header */
 
 
@@ -409,10 +412,10 @@ iframe {
   .local-img {
     max-width: 500px;
   }
-  #who {
-    font-size:18px ;
-  }
 
+
+
+  
   .serv-item {
     font-size: 16px;
   }
