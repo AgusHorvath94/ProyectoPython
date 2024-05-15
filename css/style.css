@@ -309,6 +309,7 @@ iframe {
   .nav-item {
     margin-right: 0.5rem;
   }
+  
 
   /* Para el contenido principal */
   .contenedor-banner {
@@ -364,9 +365,16 @@ iframe {
 
 @media screen and (max-width: 480px) {
   /* Para el header */
+  header {
+    flex-direction: column;
+  } 
+
+  nav {
+    text-align: center
+  }
 
   .logo-funko {
-    width: 100px;
+    width: 150px;
   }
   .logo-funko p {
     font-size: 30px;
