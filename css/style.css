@@ -163,17 +163,18 @@ section h2 {
 
 .servicios {
   display: flex;
-  flex-direction: wrap;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: whitesmoke;
-  padding: 5rem;
+  padding: 3rem;
   gap: 2rem;
+
+
 }
 
 .serv-item {
-  width: 500px;
+  width: 300px;
   height: 300px;
   color: var(--color-2);
 }
@@ -333,11 +334,16 @@ iframe {
     text-align: center;
   }
   .serv-item {
-    width: 300px;
+    width: 175px;
   }
 
   .servicios {
     flex-direction: column;
+  }
+
+  .serv-item {
+    width: 300px;
+    font-size: 20px;
   }
 
   .card {
@@ -400,8 +406,5 @@ iframe {
   .container-who {
     padding: 1rem;
   }
-  .serv-item {
-    width: 300px;
-    font-size: 20px;
-  }
+
 }
