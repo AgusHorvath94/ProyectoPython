@@ -62,7 +62,6 @@ p {
   justify-content: flex-end;
   gap: 3rem;
   list-style-type: none;
-  padding: 2rem;
   color: #f3f3f3 !important;
 }
 
@@ -143,6 +142,7 @@ section h2 {
   gap: 80px;
   padding: 3rem;
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 #who p {
@@ -161,14 +161,13 @@ section h2 {
   flex-direction: column;
 }
 
-
 .serv-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 300px;
+  width: 400px;
 }
 
 .serv-item i {
@@ -176,21 +175,20 @@ section h2 {
 }
 
 .servicios {
-  color: whitesmoke;
+  color: var(--color-2);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 4rem;
-  gap: 2rem;
+  padding: 5rem;
+  gap: 3rem;
 }
 
 #services h2 {
-  color: whitesmoke;
+  color: var(--color-2);
   text-align: center;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
-
 
 .catalog-section h2 {
   text-align: center;
@@ -311,11 +309,10 @@ iframe {
   .nav-item {
     margin-right: 0.5rem;
   }
-  
 
   /* Para el contenido principal */
   .contenedor-banner {
-    height: 400px;
+    height: 500px;
   }
   .title {
     font-size: 40px;
@@ -323,8 +320,13 @@ iframe {
     text-align: center;
   }
 
+  .offer {
+    width: 300px;
+  }
+
   #who {
     flex-direction: column;
+    font-size: 1rem;
     gap: 20px;
   }
   .local-img {
@@ -340,8 +342,8 @@ iframe {
 
   .servicios {
     flex-direction: column;
+    align-items: center;
   }
-
   .serv-item {
     width: 300px;
     font-size: 20px;
@@ -370,14 +372,14 @@ iframe {
 
 /* Media queries para móviles */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 375px) {
   /* Para el header */
   header {
     flex-direction: column;
-  } 
+  }
 
   nav {
-    text-align: center
+    text-align: center;
   }
 
   .logo-funko {
@@ -406,6 +408,18 @@ iframe {
   }
   .container-who {
     padding: 1rem;
+  }
+
+  #who {
+    flex-direction: column;
+    gap: 20px;
+
+   
+  }
+
+  #who p {
+    font-size: 1rem;
+    
   }
   .serv-item {
     font-size: 16px;
