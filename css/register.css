@@ -272,7 +272,10 @@ iframe {
 }
 
 @media screen and (max-width: 1024px) {
-  /* Para el footer */
+   /* Form*/
+
+  
+    /* Para el footer */
 
   #firstSectionFooter {
     flex-direction: column;
@@ -280,3 +283,8 @@ iframe {
     height: 100%;
   }
 }
+
+@media screen and (max-width: 480px) {
+    .form-content {
+       font-size:18px;
+      }}
