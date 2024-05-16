@@ -1,0 +1,545 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;  
+}
+
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  li {
+    margin: 0 .75rem;
+    
+  }
+   
+
+
+body{
+    font-family: Roboto;
+    background-attachment: fixed;
+    background-image: url(../img/back.png);
+    background-size: cover;
+  
+}
+
+ img {
+    
+    max-width: 70%;
+    
+ }
+
+  .logo-funko {
+    width: 200px;
+    margin-left: 5rem;
+ }
+ .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    
+ }
+    .header {
+       
+       display: flex;
+        align-items: center;
+        min-height: 80vh;
+        background: linear-gradient(
+            90deg,
+            rgb(223, 208, 10) 0%,
+            rgb(221, 235, 36) 50%,
+            rgb(214, 168, 15) 100%,
+        );
+        padding: 70px 0px;
+    }
+
+    .header-content {
+        margin-top: -27rem;
+    }
+.menu  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Roboto;
+}
+.logo{
+    max-width: 12%;
+    
+}
+
+.menu .navbar  ul li {
+    position: relative;
+    float: left;
+    font-family: "Bungee Spice";
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: rgb(145, 119, 7);
+    display: block;
+    font-family: "Bungee Spice";
+   
+}
+.menu .navbar ul li a:hover {
+    color: #e0610c;;
+}
+#menu {
+    display: none;
+} 
+.menu-icono{
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.submenu {
+    position: relative;
+}
+.submenu #carrito {
+    display: none;
+
+}
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0%;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-image: url(img/pikachu.gif);
+    background-size: cover;
+    padding: 60px;
+    min-width: 350px;
+    
+}
+table { 
+    width: 100%;
+}
+th, td {
+    color:rgb(10, 10, 10);
+}
+
+.borrar {
+    background-color: rgb(165, 42, 134);
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: aliceblue;
+    font-weight: 800;
+    cursor: pointer;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+ .header-txt {
+    flex-basis: 40%;  
+ }
+
+ .header-txt h1 {
+    font-size: 50px;
+    line-height: 1;
+    color: #bba909;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-family: "Nabla" 
+
+ }
+
+ main {
+    padding: 3rem;
+  
+ }
+
+ p {
+    font-family: Roboto;
+    color: #c5ba94;;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: "Roboto";
+ }
+
+
+.btn-1, .btn-3 {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #f1e9c6e0;
+    border: 2px solid #e9ebe2;
+    text-transform: capitalize;
+    border-radius: 25px;
+}
+
+.btn-1:hover, .btn-3:hover {
+    color: rgb(13, 14, 13);
+    background-color: #c46309;
+}
+.header-img {
+    flex-basis: 60%;
+    
+}
+ .oferts {
+    padding: 100px 0;
+ }
+h2{
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-family: "Nabla"
+}
+.oferts-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+   
+}
+.ofert-1 {
+    flex-basis: calc(30.3% - 20px);
+    box-shadow: 0 0 20px rgb(116, 115, 114);
+    padding: 80px;
+    text-align: center;
+    background: linear-gradient(
+        rgb(0,0,0,0.2),
+        rgb(0,0,0,0.2)
+    ),
+        url(img/fondowp.jpg);
+    border-radius: 20px;
+    
+}
+.ofert-1 img {
+    width: 130px;
+    height: 170px;
+    margin-bottom: 40px;
+    
+}
+h3 {
+    
+    font-size: 20px;
+    line-height: 1;
+    color: rgb(185, 180, 169);
+    margin-bottom: 10px;
+    font-family: "Bungee Spice" 
+    
+}
+.product-txt p {
+    margin-bottom: 10px;
+}
+.precio {
+    color: rgb(207, 128, 8);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.btn-3{
+    padding: 4px 20px;
+}
+
+.perfil {
+    display: flex;
+    width: 800px;
+    height: 580px;
+    
+    box-shadow: 0 0 50px rgb(175, 171, 171);
+}
+.perfil img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    max-width: 70%;
+    
+    
+}
+
+.perfil img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+    
+}
+
+.logan-1 {
+    flex-basis: 60%;
+    background: linear-gradient(
+        rgb(0,0,0,0.2),
+        rgb(0,0,0,0.2)
+    ),
+        url(img/fondowp.jpg);
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding: 10px;
+          border-radius: 20px;
+}
+.logan-1 h3 {
+    font-size: 30px;
+    color:#b3990c;
+    text-transform: uppercase;
+}
+.logan-1 p {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #b3990c;
+    margin-bottom: 20px;
+}
+.btn2 {
+    display: inline-block;
+    padding: 8px  30px;
+    border: 1px solid #b3990c;
+    color: #b3990c;
+}
+
+
+.product {
+    padding: 150px 0;
+    text-align: center;
+}
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-bottom: 100px;
+}
+.blog {
+    padding: 50px 0 100px  0;
+    
+}
+.blog-content {
+    display: flex;
+    justify-content: space-between;   
+    background-size: cover;
+}
+.blog-1{
+    flex-basis: calc(33.3% - 30px);
+    margin-top: 25px;
+    box-shadow: 0 0 20px   rgb(121, 118, 119);
+    background-image: url(../img/espacionegro.gif);
+    background-size: cover;
+    
+}
+.blog-txt {
+    padding: 40px;
+}
+.btn-4{
+    display: inline-block;
+    border: 1px solid  rgb(238, 241, 10);
+    padding: 8px 25px;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #dd940c;
+}
+
+@media(max-width:991px) {
+menu{
+    padding: 20px;
+}
+.menu label {
+    display: initial;
+}
+.menu .navbar{
+    position: absolute;
+    top:100%;
+    left: 0;
+    right: 0;
+    background-image: url(img/fondowp.jpg);
+    display: none;
+}
+.menu .navbar ul li {
+    width: 100%;
+}
+#menu:checked ~ .navbar{
+    display: initial;
+}
+.logo{
+    display: none;
+
+}
+.menu .navbar ul li a:hover {
+    color: #c5ba94;
+}
+.header{
+    min-height: 0vh;
+    padding: 100 px 30px 50px 30px;
+
+}
+.header-content {
+    flex-direction: column;
+    text-align: center;
+}
+.header-txt {
+    margin-bottom: 25px;
+}
+.oferts{
+    padding: 30px;
+}
+.oferts-content{
+    flex-direction: column;
+}
+.ofert-1{
+margin-bottom: 30px;
+}
+.logan-1{
+    order:-2;
+    margin-bottom: 30px;
+}
+.product {
+    padding: 30px;
+}
+.product-content{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+}
+.blog{
+    padding: 30px;
+}
+.blog-content{
+    flex-direction: column;
+}
+#firstSectionFooter {
+padding: 30px;
+flex-direction: column;
+text-align: center;
+}
+
+
+
+
+}
+
+
+#firstSectionFooter {
+    align-items: center;
+    background-color: #222222;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2rem;
+    height: 17rem;
+    justify-content: space-between;
+    margin-top: 7rem;
+  }
+  
+  
+  #redesSociales > h3 {
+    font-family: Roboto;
+    color:#c5ba94;
+    margin-right: 2rem;
+    font-size: 25px;
+  }
+  .bi-twitter::before {
+    color: #14aed0;
+    font-size: 2rem;
+  }
+  
+  .bi-facebook::before {
+    color: #1476d0;
+    font-size: 2rem;
+  }
+  
+  .bi-instagram::before {
+    color: #ce0cff;
+    font-size: 2rem;
+  }
+  
+  
+  #iconos {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+  }
+  
+  #secondSectionFooter {
+    background-color: #c4c4c4;
+    height: 1.56rem;
+  }
+  
+  #secondSectionFooter > h6 {
+    padding-top: 3px;
+    text-align: center;
+  }
+
+  iframe {
+    width: 250px;
+    height: 110px;
+    border-radius: 30px;
+  }
+  
+  .ubi-section p {
+    color: #eb1607;
+    font-size: 18px;
+  }
+  
+  .ubi-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .ubi-section i {
+    color: #aa2605
+  }
+  
+  #contact-section {
+    width: 300px;
+    color: #d66c08;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #contact-section h6 {
+    font-size: 20px;
+    margin-right:2rem;
+  }
+
+  .back {
+    background-color: rgb(118, 58, 169);
+    padding: 20px;
+    margin-left: 2rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    color: #f3f3f3;
+    text-decoration: none;
+   
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+    
