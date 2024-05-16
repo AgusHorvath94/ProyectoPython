@@ -292,7 +292,7 @@ iframe {
   color: var(--color-2);
 }
 
- #contact-section {
+#contact-section {
   width: 300px;
   color: var(--color-2);
   display: flex;
@@ -303,7 +303,6 @@ iframe {
 
 #contact-section h6 {
   font-size: 20px;
-
 }
 
 /* Media queries para tablet  */
@@ -332,14 +331,11 @@ iframe {
   #who {
     flex-direction: column;
     gap: 20px;
-  
   }
 
   #who p {
     font-size: 16px;
-
   }
-
 
   .local-img {
     width: 100%;
@@ -348,7 +344,6 @@ iframe {
   .container-who {
     text-align: center;
   }
-
 
   .servicios {
     flex-direction: column;
@@ -376,7 +371,6 @@ iframe {
     height: 100%;
   }
 
-
   #redesSociales {
     margin-left: 2rem;
   }
@@ -386,7 +380,6 @@ iframe {
 
 @media screen and (max-width: 480px) {
   /* Para el header */
-
 
   .logo-funko {
     width: 150px;
@@ -413,12 +406,7 @@ iframe {
     max-width: 500px;
   }
 
-
-
-  
   .serv-item {
     font-size: 16px;
   }
-
-
 }

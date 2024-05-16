@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de registración</title>
+
+    <link rel="stylesheet" href="/css/register.css" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- Bootrap icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-section">
+        <img class="logo-funko" src="/img/logo.png" alt="logo" />
+        <p>Shop</p>
+      </div>
+      <a class="back" href="/index.html">Volver</a>
+    </header>
+    <main>
+      <div class="form-content register">
+        <h2>Registro</h2>
+        <form action="#" method="get" id="FormRegister" novalidate>
+          <div>
+            <label for="firstname">Nombre</label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              maxlength="15"
+              required
+            />
+          </div>
+          <div class="error" id="error-firstname"></div>
+
+          <div>
+            <label for="lastname">Apellido</label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              minlength="2"
+              required
+            />
+          </div>
+          <div class="error" id="error-lastname"></div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="error" id="error-email"></div>
+
+          <div>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+          <div class="error" id="error-password"></div>
+          <div>
+            <label for="birthday">Fecha de nacimiento</label>
+            <input type="date" name="birthday" id="birthday" required />
+          </div>
+          <div class="error" id="error-birthday"></div>
+
+          <div class="form-control">
+            <select
+              aria-label="State"
+              name="country"
+              id="country"
+              class="form-select"
+            >
+              <option value="">País</option>
+              <option value="AR">Argentina</option>
+              <option value="BO">Bolivia</option>
+              <option value="BR">Brasil</option>
+              <option value="CH">Chile</option>
+              <option value="CO">Colombia</option>
+              <option value="EC">Ecuador</option>
+              <option value="PY">Paraguay</option>
+              <option value="PE">Perú</option>
+              <option value="UY">Uruguay</option>
+              <option value="VE">Venezuela</option>
+            </select>
+            <div class="error" id="error-country"></div>
+          </div>
+          <div class="form-terms">
+            <div class="terms">
+              <input type="checkbox" id="terms" required />
+              <label for="terms">Acepto términos y condiciones</label>
+            </div>
+            <div class="error" id="error-terms"></div>
+          </div>
+
+          <input type="submit" value="Registrarse" id="btn-send" />
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <section id="firstSectionFooter">
+        <div class="logo-section">
+          <img class="logo-funko" src="/img/logo.png" alt="logo" />
+          <p>Shop</p>
+        </div>
+        <div class="ubi-section">
+          <p><i class="bi bi-geo"></i> Localidad</p>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105082.52414775609!2d-58.513360161293896!3d-34.60848836981988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbbb7c68078b%3A0xdc264e1614a96ae2!2sOficinas%20Codo%20a%20Codo(subsuelo)!5e0!3m2!1ses-419!2sar!4v1713243238747!5m2!1ses-419!2sar"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div id="contact-section">
+          <p>Irigoyen 272, C1072 CABA</p>
+          <p><i class="bi bi-telephone"></i>1123232731</p>
+          <p><i class="bi bi-envelope"></i> ventas@funkoshop.com.ar</p>
+        </div>
+
+        <div id="redesSociales">
+          <h3>Redes Sociales</h3>
+          <br />
+          <div id="iconos">
+            <a href="https://twitter.com" target="_blank">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="secondSectionFooter">
+        <h6>Todos los derechos reservados @ 2024</h6>
+      </section>
+    </footer>
+
+    <script src="/js/validation-register.js"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
