@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nabla&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/funko.css">
+     <!-- Bootrap icons -->
+
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+   />
+ </head>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-section">
+            <img class="logo-funko" src="img/LOGO.png" alt="logo">
+            <p>Shop</p>
+        </div>
+        
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            
+                <li class="submenu">
+                    <img src="img/icons8-carrito-de-compras-30.png" id="img-carrito" alt="">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn-1">Vaciar carrito</a>
+                    </div>
+                </li>
+              
+            </ul>
+            <a class="back" href="index.html">Volver</a> 
+</nav>
+    </header>
+    <div class="promo">
+        <div class="prompo-txt">
+            <h2>Promociones</h2>
+        </div>
+    </div>
+
+    <div class="slider">
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+
+        <div class="slide">
+            <div class="slide">
+                <img src="img/deku.png" alt="Slide 1">
+                <div class="slide-content">
+                    <h2>Funko Pop Deku - My Hero Academia</h2>
+                    <p>$44.500,00</p>
+                    <a href="#" class="btn-comprar">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/deadpool.png" alt="Slide 2">
+                <div class="slide-content">
+                    <h2>Funko Pop Deadpool - Deadpool</h2>
+                    <p>$60.900,00</p>
+                    <a href="#" class="btn-comprar">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="img/groot.png" alt="Slide 3">
+                <div class="slide-content">
+                    <h2>Funko Pop Groot - Guardianes de la Galaxia</h2>
+                    <p>$47.500,00</p>
+                    <a href="#" class="btn-comprar">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <div class="banner">
+                <h1>Productos</h1>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!--seccion de productos-->
+        <section id="Products">
+            <div class="product-content" id="product-1">
+                <img src="img/kisspng-more-of-the-joy-of-painting-funko-pop-television-b-bob-ross-5b359f86c0d2c4.4723694415302409027898.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Bob-ross - Bob-Ross</h4>
+                    <p class="precio">$33.000,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>5.500,00</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-2">
+                <img src="img/kisspng-more-of-the-joy-of-painting-funko-pop-television-b-bob-ross-5b359f86c0d2c4.4723694415302409027898.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Ace - One Piece</h4>
+                    <p>$59.999,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$9.999,83</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-3">
+                <img src="img/bestia.png" alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Bestia - Marvel X-Men</h4>
+                    <p>$45.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.583,33</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-4">
+                <img src="img/deku.png" alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Deku - My Hero Academia</h4>
+                    <p>$44.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.416,67</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-5">
+                <img src="img/deadpool.png" alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Deadpool - Deadpool</h4>
+                    <p>$60.900,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$10.150,00</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-6">
+                <img src="img/draco.png" alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Draco - Harry Potter</h4>
+                    <p>$48.999,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$8.166,50</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+
+                </div>
+            </div>
+            <div class="product-content" id="product-7">
+                <img src="img/groot.png" alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Groot - Guardianes de la Galaxia</h4>
+                    <p>$47.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.916,67</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-8">
+                <img src="img/harry.png" alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Harry - Harry Potter</h4>
+                    <p>$47.999,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.999,83</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-9">
+                <img src="img/hermione.png" alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Hermione - Harry Potter</h4>
+                    <p>$57.999,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>9.666,50</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-10">
+                <img src="img/inuyasha.png" alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Inuyasha - Inuyasha</h4>
+                    <p>$47.999,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.999,83</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-11">
+                <img src="img/ironspider.png" alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop IronSpider - Avengers-Infinity War</h4>
+                    <p>$44.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.416,67</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="11">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-12">
+                <img src="img/kakashi.png" alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Kakashi - Naruto</h4>
+                    <p>$43.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.250,00</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="12">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-13">
+                <img src="img/kisspng-akuma-street-fighter-blanka-cammy-funko-funko-pop-5b21a2b50cc3a8.2938888615289309970523.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Akuma - Street Fighter</h4>
+                    <p>$21.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$3.583,33</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="13">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-14">
+                <img src="img/kisspng-b-a-baracus-howling-mad-murdock-john-hannibal-funko-pop-5b398f64e9e839.3534214615304989169581.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop B.A Baracus - The A Team</h4>
+                    <p>$44.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.416,67</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="14">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-15">
+                <img src="img/kisspng-eric-draven-funko-action-toy-figures-doll-funko-pop-5b21b6fad8f605.4873411615289361868887.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop The Crow - The Crow</h4>
+                    <p>$47.900,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.983,33</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="15">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-16">
+                <img src="img/kisspng-five-nights-at-freddy-s-sister-location-five-nigh-funko-pop-5b5e8bcdbc6d30.3252156015329228297718.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Dark Springtrap - Five Nights Fredy's</h4>
+                    <p>$47.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.916,67</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="16">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-17">
+                <img src="img/kisspng-five-nights-at-freddy-s-sister-location-five-nigh-pop-culture-5b28c92fca7255.6021899215293995998292.png
+                    " alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Freddy - Five Nights Freddy's</h4>
+                    <p>$43.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.250,00</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="17">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-18">
+                <img src="img/deku.png" alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Deku - My Hero Academia</h4>
+                    <p>$47.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.916,67</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="18">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-19">
+                <img src="img/kisspng-flash-funko-pop-vinyl-figure-action-toy-figures-savitar-5b27ba80a62ff0.5230318715293303046807.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Flash -The Flash</h4>
+                    <p>$49.999,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$8.333,17</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="19">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-20">
+                <img src="img/kisspng-funko-action-toy-figures-designer-toy-guns-n-ro-5af64051539c20.6515157815260877613425.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Slash - Guns N Roses</h4>
+                    <p>$59.999,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$9.999,83</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="20">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-21">
+                <img src="img/kisspng-funko-drag-queen-hot-topic-action-toy-figures-funko-pop-5b326d5d1a3ce3.9944329315300314531075.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Alaska - Drag Queen</h4>
+                    <p>$50.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$8.416,67</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="21">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-22">
+                <img src="img/kisspng-hello-neighbor-funko-collectable-dynamic-pixels-vi-funko-pop-5b2194c33578d8.622641151528927427219.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop The Neighbor - Hello Neighbor</h4>
+                    <p>$43.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.250,00</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="22">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-23">
+                <img src="img/kisspng-how-the-grinch-stole-christmas-funko-pop-vinyl-f-the-grinch-5b270c4b62c125.8649971015292857074045.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop The Grinch - The Grinch</h4>
+                    <p>$44.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.416,67</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="23">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-24">
+                <img src="img/kisspng-more-of-the-joy-of-painting-funko-pop-television-b-bob-ross-5b359f86c0d2c4.4723694415302409027898.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Bob Ross and Raccoon - Bob Ross</h4>
+                    <p>$45.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.583,33</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="24">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-25">
+                <img src="img/kisspng-princess-carolyn-mr-peanutbutter-todd-chavez-funk-bojack-horseman-5b2b8fedef9cc9.1366227415295815499815.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Princess Carolyn - Bojack Horseman</h4>
+                    <p>$52.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$8.750,00</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="25">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-26">
+                <img src="img/kisspng-rick-sanchez-funko-pop-animation-rick-and-morty-5b26e65c6a2729.3636287015292759964348.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Rick Sanchez - Rick and Morty</h4>
+                    <p>$47.999,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.999,00</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="26">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-27">
+                <img src="img/kisspng-slimer-peter-venkman-stay-puft-marshmallow-man-san-5b1d9ccb7982a2.5993084815286673394977.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Slimer - Ghostbousters</h4>
+                    <p>$57.999,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$9.666,50</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="27">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-28">
+                <img src="img/kisspng-stewie-griffin-peter-griffin-brian-griffin-funko-p-5c886a64506a41.2656040015524440043294.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Brian -Family Guy</h4>
+                    <p>$43.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.250,00</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="28">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-29">
+                <img src="img/kisspng-weird-al-yankovic-funko-pop-vinyl-figure-pop-ro-boneco-funko-pop-coleo-msicos-elvis-presle-5baa817a140168.480623191537900922082.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Elvis - 1970' Elvis</h4>
+                    <p>$64.900,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$10.816,67</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="29">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-30">
+                <img src="img/kisspng-willy-wonka-mike-teavee-charlie-bucket-violet-beau-willy-wonka-5b2d099f478d26.3418285515296782392931.png"
+                    alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Willy Wonka - Willy Wonka the Chocolate Factory</h4>
+                    <p>$74.900,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$12.483,33</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="30">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product-content" id="product-31">
+                <img src="img/luna.png" alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Luna -Harry Potter</h4>
+                    <p>$44.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.416,67</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="31">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product-content" id="product-32">
+                <img src="img/kisspng-five-nights-at-freddy-s-sister-location-five-nigh-pop-culture-5b28c92fca7255.6021899215293995998292.png
+                    " alt="">
+                <div class="product-txt">
+                    <h4>Funko Pop Freddy - Five Nights Freddy's</h4>
+                    <p>$43.500,00</p>
+                    <div class="subprecio">
+                        <span>6</span>
+                        <span>x</span>
+                        <span>$7.250,00</span>
+                        <span>sin interés</span>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="17">Agregar al carrito</a>
+                </div>
+            </div>
+   
+        </section>
+    </main>
+   
+
+    <footer>
+        <section id="firstSectionFooter">
+            <div class="logo-section">
+                <img class="logo-funko" src="img/LOGO.png" alt="logo">
+                <p>Shop</p>
+            </div>
+            <div class="ubi-section">
+                <p><i class="bi bi-geo"></i> Localidad</p>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105082.52414775609!2d-58.513360161293896!3d-34.60848836981988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbbb7c68078b%3A0xdc264e1614a96ae2!2sOficinas%20Codo%20a%20Codo(subsuelo)!5e0!3m2!1ses-419!2sar!4v1713243238747!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <article id="contact-section">
+                <p>Irigoyen 272, C1072 CABA</p>
+                <p><i class="bi bi-telephone"></i>1123232731</p>
+                <p><i class="bi bi-envelope"></i> ventas@funkoshop.com.ar</p>
+            </article>
+
+            <article id="redesSociales">
+                <h3>Redes Sociales</h3>
+                <br>
+                <div id="iconos">
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </article>
+        </section>
+        <section id="secondSectionFooter">
+            <h6>Todos los derechos reservados @ 2024</h6>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-7Lvu7F6GzIi6zAmK7Kc+qSOs3Bu6v6U/pjF+6Lkayc6v1pyjDFiMQTh+uT8+nyw1"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
