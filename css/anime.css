@@ -345,7 +345,7 @@ h3 {
   }
   .header {
     min-height: 0vh;
-    padding: 100 px 30px 50px 30px;
+    padding: 100px 30px 50px 30px;
   }
   .header-content {
     flex-direction: column;

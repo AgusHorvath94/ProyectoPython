@@ -79,7 +79,6 @@ header {
 
 input {
   width: 100%;
-  border: o;
   outline: none;
   padding: 18px 15px;
   color: #302e2e;
@@ -96,7 +95,6 @@ form .form-control {
 
 .form-control input {
   width: 100%;
-  border: o;
   outline: none;
   padding: 18px 15px;
   color: #302e2e;
