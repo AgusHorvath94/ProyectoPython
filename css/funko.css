@@ -14,8 +14,6 @@ body {
   margin: 0 auto;
   padding: 0;
   font-family: "Roboto";
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
   background-image: url(../img/back.png);
   height: 300vh;
@@ -163,30 +161,66 @@ td {
   background-color: dimgray;
 }
 
-.slide {
+.slider {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+
+  min-width: 100%;
   box-sizing: border-box;
+  position: relative;
 }
 
 .slide img {
-  max-width: 100%;
-  height: auto;
+  border-radius: 10px;
+ 
 }
 
 .slide-content {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-  font-family: "roboto";
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -13px;
+  right: 110px;
+  color: white;
+  align-items: center;
+ 
+}
+
+.slide-content h2 {
+  font-size: 25px;
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.price-1 {
+  font-size: 15px;
+  color: dimgray;
+  text-decoration-line: line-through;
+  margin-bottom: 5px;
+}
+
+.price-2 {
+  font-size: 20px;
   color: var(--color-2);
 }
 
-.btn-comprar {
+.btn-2 {
   display: inline-block;
   padding: 10px 25px;
   font-size: 14px;
@@ -195,38 +229,53 @@ td {
   border-radius: 25px;
   margin-top: 15px;
   text-decoration: none;
-}
-.btn-comprar:hover {
-  background-color: dimgray;
-}
-.navigation {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50);
+  align-items: center;
 }
 
-.navigation label {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--color-1);
-  cursor: pointer;
-  margin: 0 5px;
+.btn-2:hover {
+  background-color: dimgray;
+  color: var(--color-2);
 }
 
 input[type="radio"] {
   display: none;
 }
 
-input[type="radio"]:checked + .slides .slide {
-  opacity: 0;
+.navigation {
+  text-align: center;
+  margin-top: 10px;
 }
 
-input[type="radio"]:checked + .slides .slide:nth-child(1),
-input[type="radio"]:checked + .navigation label:nth-child(1) {
-  opacity: 1;
+.navigation label {
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #ddd;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked~.slides {
+  transform: translateX(calc(-100% * var(--index)));
+}
+
+#slide1:checked~.slides {
+  --index: 0;
+}
+
+#slide2:checked~.slides {
+  --index: 1;
+}
+
+#slide3:checked~.slides {
+  --index: 2;
+}
+
+#slide1:checked~.navigation label:nth-child(1),
+#slide2:checked~.navigation label:nth-child(2),
+#slide3:checked~.navigation label:nth-child(3) {
+  background: #333;
 }
 
 #firstSectionFooter {
