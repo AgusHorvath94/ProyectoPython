@@ -65,13 +65,14 @@ async function saveUsuario(){
     const email = document.querySelector('#email').value;
     const contraseña = document.querySelector('#password').value;
     const nacimiento = document.querySelector('#birthday').value;
-  
+    const terminos = document.querySelector('#terms').checked;
    
     //VALIDACION DE FORMULARIO
-    if (!nombre || !apellido || !email || !contraseña || !nacimiento) {
+    if (!nombre || !apellido || !email || !contraseña || !nacimiento || !terminos) {
+      let mensaje = 'Por favor completa todos los campos.'; 
       Swal.fire({
           title: 'Error!',
-          text: 'Por favor completa todos los campos.',
+          text: mensaje,
           icon: 'error',
           confirmButtonText: 'Cerrar'
       });
