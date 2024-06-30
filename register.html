@@ -39,6 +39,7 @@
       <div class="form-content register">
         <h2>Registro</h2>
         <form action="#" method="get" id="FormRegister" novalidate>
+          <input type="hidden" id="id-usuario">
           <div>
             <label for="firstname">Nombre</label>
             <input
@@ -80,27 +81,7 @@
           </div>
           <div class="error" id="error-birthday"></div>
 
-          <div class="form-control">
-            <select
-              aria-label="State"
-              name="country"
-              id="country"
-              class="form-select"
-            >
-              <option value="">País</option>
-              <option value="AR">Argentina</option>
-              <option value="BO">Bolivia</option>
-              <option value="BR">Brasil</option>
-              <option value="CH">Chile</option>
-              <option value="CO">Colombia</option>
-              <option value="EC">Ecuador</option>
-              <option value="PY">Paraguay</option>
-              <option value="PE">Perú</option>
-              <option value="UY">Uruguay</option>
-              <option value="VE">Venezuela</option>
-            </select>
-            <div class="error" id="error-country"></div>
-          </div>
+          
           <div class="form-terms">
             <div class="terms">
               <input type="checkbox" id="terms" required >
@@ -113,6 +94,24 @@
         </form>
       </div>
     </main>
+
+    <section id="list" class="container">
+      <h3 class="subtitle">Listado de usuarios</h3>
+      <table id="list-table-usuarios" class="table">
+          <thead>
+              <tr>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Email</th>
+                  <th>Contraseña</th>
+                  <th>Nacimiento</th>
+              </tr>
+          </thead>
+          <tbody id="tbody-table-usuarios">
+              
+          </tbody>
+      </table>
+  </section>  
 
     <footer>
       <section id="firstSectionFooter">
@@ -160,8 +159,11 @@
         <h6>Todos los derechos reservados @ 2024</h6>
       </section>
     </footer>
-
-    <script src="js/validation-register.js"></script>
+    
+    <!-- SweetAlert -->
+ 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/register-fetch.js"></script>
 
     <!-- Bootstrap JavaScript Libraries -->
 

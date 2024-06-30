@@ -135,6 +135,10 @@ form .form-terms {
   margin-top: 2rem;
 }
 
+#terms {
+  width: 5rem;
+}
+
 form .terms {
   display: flex;
 }
@@ -178,6 +182,39 @@ form .terms input {
   text-decoration: none;
 }
 
+/* Styles de la tabla */
+
+#list {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+
+}
+
+.subtitle {
+  padding-top: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  color: var(--color-2);
+  text-align: center;
+
+}
+
+th {
+  color: var(--color-2);
+}
+
+tbody {
+  color: var(--color-2);
+}
+
+.btn-cac {
+  width: 50px;
+  height: 50px;
+  border-radius:10%;
+  background-color: rgb(118, 58, 169);
+  color: var(--color-2);
+  
+}
 /* Styles del footer */
 
 #firstSectionFooter {
